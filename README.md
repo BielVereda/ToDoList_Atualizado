@@ -152,6 +152,19 @@ DELETE /tarefas/1
 
 - Atualizar uma tarefa existente.
 
-- Deletar uma tarefa.
+## 📸 Prints dos testes
 
-- Erro ao tentar criar tarefa sem usuário → deve retornar Usuário não encontrado.
+# Criação de usuário
+<img width="1289" height="619" alt="Captura de tela de 2026-02-04 10-58-46" src="https://github.com/user-attachments/assets/9931f3d0-1f99-408d-bba1-d870a64271dd" />
+
+# Criação de tarefas vinculadas
+<img width="1289" height="619" alt="Captura de tela de 2026-02-04 11-01-27" src="https://github.com/user-attachments/assets/58e7fe95-eece-4523-a679-f983fa14069a" />
+
+# Listagem de tarefas por usuário
+<img width="1372" height="552" alt="Captura de tela de 2026-02-04 11-11-42" src="https://github.com/user-attachments/assets/eaca7825-ba1a-4f92-a629-4800fe9aca5f" />
+
+# Atualização e exclusão de tarefa
+<img width="1372" height="552" alt="Captura de tela de 2026-02-04 11-10-39" src="https://github.com/user-attachments/assets/9a094116-f908-4233-be84-84205331631f" />
+
+# Deletar tarefa
+<img width="1372" height="552" alt="Captura de tela de 2026-02-04 11-13-08" src="https://github.com/user-attachments/assets/a81b78d5-c250-42c5-8b1b-5abfafb9d4b5" />
