@@ -66,10 +66,9 @@ spring.jpa.properties.hibernate.format_sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
 server.port=8080
-
-🌐 Endpoints
-Usuários
-
+```
+## 🌐 Endpoints Usuários
+``
     POST /usuarios → Criar usuário
 
     GET /usuarios → Listar usuários
@@ -82,7 +81,7 @@ Usuários
 
     GET /usuarios/{id}/tarefas → Listar tarefas de um usuário específico
 
-Tarefas
+## Tarefas
 
     POST /tarefas → Criar tarefa (sem vínculo direto, usado apenas se necessário)
 
@@ -92,12 +91,11 @@ Tarefas
 
     PUT /tarefas/{id} → Atualizar tarefa
 
-    DELETE /tarefas/{id} → Deletar tarefa
+    DELETE /tarefas/{id} → Deletar tarefa```
 
-📬 Exemplos de Requisições (Postman/Insomnia)
-Criar Usuário
-http
-
+## 📬 Exemplos de Requisições (Postman/Insomnia)
+Criar Usuário HTTP
+```
 POST /usuarios
 Content-Type: application/json
 
@@ -106,10 +104,10 @@ Content-Type: application/json
   "email": "gabriel@email.com",
   "password": "123456"
 }
+```
 
-Criar Tarefa vinculada a um Usuário
-http
-
+Criar Tarefa vinculada a um Usuário HTTP
+```
 POST /usuarios/1/tarefas
 Content-Type: application/json
 
@@ -120,10 +118,10 @@ Content-Type: application/json
   "beginDate": "2026-02-04",
   "endDate": "2026-02-10"
 }
+```
 
-Listar Tarefas de um Usuário
-http
-
+Listar Tarefas de um Usuário HTTP
+```
 GET /usuarios/1/tarefas
 
 Atualizar Tarefa
@@ -139,20 +137,21 @@ Content-Type: application/json
   "beginDate": "2026-02-04",
   "endDate": "2026-02-10"
 }
+```
 
-Deletar Tarefa
-http
-
+Deletar Tarefa HTTP
+```
 DELETE /tarefas/1
+```
 
 🧪 Testes esperados
 
-    Criar um usuário com várias tarefas.
+- Criar um usuário com várias tarefas.
 
-    Listar tarefas de um usuário específico.
+- Listar tarefas de um usuário específico.
 
-    Atualizar uma tarefa existente.
+- Atualizar uma tarefa existente.
 
-    Deletar uma tarefa.
+- Deletar uma tarefa.
 
-    Erro ao tentar criar tarefa sem usuário → deve retornar Usuário não encontrado.
+- Erro ao tentar criar tarefa sem usuário → deve retornar Usuário não encontrado.
