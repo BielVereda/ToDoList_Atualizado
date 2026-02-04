@@ -123,10 +123,9 @@ Content-Type: application/json
 Listar Tarefas de um Usuário HTTP
 ```
 GET /usuarios/1/tarefas
-
-Atualizar Tarefa
-http
-
+```
+Atualizar Tarefa HTTP
+```
 PUT /tarefas/1
 Content-Type: application/json
 
