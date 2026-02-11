@@ -60,16 +60,13 @@ CREATE DATABASE todo_db;
 No arquivo `application.properties`:
 
 ```properties
-spring.application.name=ToDo
-spring.datasource.url=jdbc:mysql://localhost:3306/ToDoList?useSSL=false&serverTimezone=UTC
-spring.datasource.username=seuusuario
-spring.datasource.password=suasenha
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/todo_db
+spring.datasource.username=root
+spring.datasource.password=rootroot
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
 server.port=8080
 ```
