@@ -67,20 +67,29 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
 server.port=8080
 ```
+
+---
 ## 🌐 Endpoints Usuários
-``
+```
     POST /usuarios → Criar usuário
-
+```
+```
     GET /usuarios → Listar usuários
-
+```
+```
     GET /usuarios/{id} → Buscar usuário por ID
-
+```
+```
     DELETE /usuarios/{id} → Deletar usuário
-
+```
+```
     POST /usuarios/{id}/tarefas → Criar tarefa vinculada a um usuário
-
+```
+```
     GET /usuarios/{id}/tarefas → Listar tarefas de um usuário específico
+```
 
+---
 ## Tarefas
 
 ```
@@ -101,11 +110,13 @@ server.port=8080
 
 ---
 ## 📬 Exemplos de Requisições (Postman/Insomnia)
-Criar Usuário HTTP
+
+### Criar Usuário HTTP
 ```
 POST /usuarios
 Content-Type: application/json
-
+```
+```
 {
   "name": "Gabriel",
   "email": "gabriel@email.com",
@@ -113,11 +124,12 @@ Content-Type: application/json
 }
 ```
 
-Criar Tarefa vinculada a um Usuário HTTP
+### Criar Tarefa vinculada a um Usuário HTTP
 ```
 POST /usuarios/1/tarefas
 Content-Type: application/json
-
+```
+```
 {
   "name": "Estudar Spring Boot",
   "description": "Finalizar projeto To-Do List",
@@ -127,15 +139,17 @@ Content-Type: application/json
 }
 ```
 
-Listar Tarefas de um Usuário HTTP
+### Listar Tarefas de um Usuário HTTP
 ```
 GET /usuarios/1/tarefas
 ```
-Atualizar Tarefa HTTP
+
+### Atualizar Tarefa HTTP
 ```
 PUT /tarefas/1
 Content-Type: application/json
-
+```
+```
 {
   "name": "Estudar Spring Boot",
   "description": "Finalizar projeto com relacionamento 1:N",
@@ -145,12 +159,12 @@ Content-Type: application/json
 }
 ```
 
-Deletar Tarefa HTTP
+### Deletar Tarefa HTTP
 ```
 DELETE /tarefas/1
 ```
 
-🧪 Testes esperados
+## 🧪 Testes esperados
 
 - Criar um usuário com várias tarefas.
 
@@ -158,6 +172,7 @@ DELETE /tarefas/1
 
 - Atualizar uma tarefa existente.
 
+---
 ## 📸 Prints dos testes
 
 ### Criação de usuário
