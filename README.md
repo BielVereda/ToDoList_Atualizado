@@ -167,14 +167,6 @@ Content-Type: application/json
 DELETE /tarefas/1
 ```
 
-## 🧪 Testes esperados
-
-- Criar um usuário com várias tarefas.
-
-- Listar tarefas de um usuário específico.
-
-- Atualizar uma tarefa existente.
-
 ---
 ## 📸 Prints dos testes
 
