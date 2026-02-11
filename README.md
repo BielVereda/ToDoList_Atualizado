@@ -51,13 +51,19 @@ Este projeto é uma aplicação **Spring Boot** que implementa um sistema de ger
 
 ## ⚙️ Configuração do Banco de Dados
 
+No MySQL Workbench / Xampp:
+
+```
+CREATE DATABASE todo_db;
+```
+
 No arquivo `application.properties`:
 
 ```properties
 spring.application.name=ToDo
 spring.datasource.url=jdbc:mysql://localhost:3306/ToDoList?useSSL=false&serverTimezone=UTC
-spring.datasource.username=root
-spring.datasource.password=rootroot
+spring.datasource.username=seuusuario
+spring.datasource.password=suasenha
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 spring.jpa.hibernate.ddl-auto=update
