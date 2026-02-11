@@ -83,16 +83,23 @@ server.port=8080
 
 ## Tarefas
 
+```
     POST /tarefas → Criar tarefa (sem vínculo direto, usado apenas se necessário)
-
+```
+```
     GET /tarefas → Listar todas as tarefas
-
+```
+```
     GET /tarefas/{id} → Buscar tarefa por ID
-
+```
+```
     PUT /tarefas/{id} → Atualizar tarefa
-
+```
+```
     DELETE /tarefas/{id} → Deletar tarefa```
+```
 
+---
 ## 📬 Exemplos de Requisições (Postman/Insomnia)
 Criar Usuário HTTP
 ```
