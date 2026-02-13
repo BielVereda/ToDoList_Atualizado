@@ -108,7 +108,7 @@ server.port=8080
     PUT /tarefas/{id} → Atualizar tarefa
 ```
 ```
-    DELETE /tarefas/{id} → Deletar tarefa```
+    DELETE /tarefas/{id} → Deletar tarefa
 ```
 
 ---
