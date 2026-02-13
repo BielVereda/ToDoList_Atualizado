@@ -122,7 +122,7 @@ Content-Type: application/json
 ```
 {
   "name": "Gabriel",
-  "email": "gabriel@email.com",
+  "email": "gabriel.vereda@gmail.com",
   "password": "123456"
 }
 ```
