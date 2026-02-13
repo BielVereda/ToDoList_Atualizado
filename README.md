@@ -1,6 +1,6 @@
 # 📋 ToDoList_Atualizado
 
-Este projeto é uma aplicação **Spring Boot** que implementa um sistema de gerenciamento de usuários e tarefas (**CRUD completo**) com relacionamento **1:N (Um-para-Muitos)** utilizando JPA/Hibernate.
+Este projeto é uma aplicação **Spring Boot** que implementa um sistema de gerenciamento de usuários e tarefas (**CRUD completo**) com relacionamento **1:N (Um-para-Muitos)** utilizando JPA.
 
 ---
 
@@ -112,7 +112,7 @@ server.port=8080
 ```
 
 ---
-## 📬 Exemplos de Requisições (Postman/Insomnia)
+## 📬 Exemplos de Requisições (Postman) + Prints 📸
 
 ### Criar Usuário HTTP
 ```
@@ -126,6 +126,7 @@ Content-Type: application/json
   "password": "123456"
 }
 ```
+<img width="1289" height="619" alt="Captura de tela de 2026-02-04 10-58-46" src="https://github.com/user-attachments/assets/9931f3d0-1f99-408d-bba1-d870a64271dd" />
 
 ### Criar Tarefa vinculada a um Usuário HTTP
 ```
@@ -141,11 +142,13 @@ Content-Type: application/json
   "endDate": "2026-02-10"
 }
 ```
+<img width="1289" height="619" alt="Captura de tela de 2026-02-04 11-01-27" src="https://github.com/user-attachments/assets/58e7fe95-eece-4523-a679-f983fa14069a" />
 
 ### Listar Tarefas de um Usuário HTTP
 ```
 GET /usuarios/1/tarefas
 ```
+<img width="1372" height="552" alt="Captura de tela de 2026-02-04 11-11-42" src="https://github.com/user-attachments/assets/eaca7825-ba1a-4f92-a629-4800fe9aca5f" />
 
 ### Atualizar Tarefa HTTP
 ```
@@ -161,26 +164,11 @@ Content-Type: application/json
   "endDate": "2026-02-10"
 }
 ```
+<img width="1372" height="552" alt="Captura de tela de 2026-02-04 11-10-39" src="https://github.com/user-attachments/assets/9a094116-f908-4233-be84-84205331631f" />
+
 
 ### Deletar Tarefa HTTP
 ```
 DELETE /tarefas/1
 ```
-
----
-## 📸 Prints dos testes
-
-### Criação de usuário
-<img width="1289" height="619" alt="Captura de tela de 2026-02-04 10-58-46" src="https://github.com/user-attachments/assets/9931f3d0-1f99-408d-bba1-d870a64271dd" />
-
-### Criação de tarefas vinculadas
-<img width="1289" height="619" alt="Captura de tela de 2026-02-04 11-01-27" src="https://github.com/user-attachments/assets/58e7fe95-eece-4523-a679-f983fa14069a" />
-
-### Listagem de tarefas por usuário
-<img width="1372" height="552" alt="Captura de tela de 2026-02-04 11-11-42" src="https://github.com/user-attachments/assets/eaca7825-ba1a-4f92-a629-4800fe9aca5f" />
-
-### Atualização e exclusão de tarefa
-<img width="1372" height="552" alt="Captura de tela de 2026-02-04 11-10-39" src="https://github.com/user-attachments/assets/9a094116-f908-4233-be84-84205331631f" />
-
-### Deletar tarefa
 <img width="1372" height="552" alt="Captura de tela de 2026-02-04 11-13-08" src="https://github.com/user-attachments/assets/a81b78d5-c250-42c5-8b1b-5abfafb9d4b5" />
